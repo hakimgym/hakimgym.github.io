@@ -9,21 +9,25 @@
     <title>HAKIM GYM Kladno</title>
     <link rel="shortcut icon" href="/img/logo.png">
     <link rel="stylesheet" href="/css/uvodni.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+    </style>
 </head>
 <body>
 <header>
     <div class="top-panel">
-        <img src="/img/logo.png" alt="Logo fitness centra" class="logo">
-        <div class="opening-hours">
+        <a href="index.html" class="home-button">
+            <img src="/img/logo.png" alt="Logo fitness centra" class="logo" style="margin-left: -1vw"
+                 title="Hlavní stránka">
+        </a>
+        <div class="opening-hours" style="max-width: 20%">
             Otevírací doba: Po-Ne 6:00 - 22:00
         </div>
         <div class="contact">
             Tel: +420 777 357 382 | E-mail: hakim@email.cz
         </div>
-        <div class="social-media">
-            <a href="https://www.facebook.com/profile.php?id=100057582725641" target="_blank"><img src="/img/fb.png" alt="Facebook"/></a>
-            <a href="https://www.instagram.com/hakim.fitness/" target="_blank"><img src="/img/ig.png" alt="Instagram" style="transform: scale(1.18)"/></a>
-        </div>
+        <button class="dropdown-btn"><img src="/img/dropdown.png" alt="dropdown button" title="Rozbalit nabídku"/>
+        </button>
     </div>
 </header>
 
@@ -35,6 +39,10 @@
             </a>
             <p>FIGHTING</p>
         </div>
+        <div style="display: flex; justify-content: center; align-items: center">
+            <img src="/img/logo.png" alt="Logo" class="section-image"
+                 style="transform: scale(3); margin-top: -25vh; max-width: 40vw; max-height: 40vh">
+        </div>
         <div class="section">
             <a href="fitness.html">
                 <img src="/img/lifter.png" alt="Fitness" class="section-image">
@@ -45,7 +53,27 @@
 </main>
 
 <footer>
-    <div class="address"> HAKIM GYM Kladno | Arménská 3277, 272 01, Kladno</div>
+    <div class="social-media">
+        <a href="https://www.facebook.com/profile.php?id=100057582725641" target="_blank"><img src="/img/fb.png"
+                                                                                               alt="Facebook"
+                                                                                               title="Facebook: Hakim Gym"/></a>
+        <a href="https://www.instagram.com/hakim.fitness/" target="_blank"><img src="/img/ig.png" alt="Instagram"
+                                                                                style="transform: scale(1.18)"
+                                                                                title="Instagram: Hakim Gym"/></a>
+        <a href="https://www.youtube.com/@HakimGym" target="_blank"><img src="/img/yt.png" alt="Youtube"
+                                                                         style="transform: scale(1.18)"
+                                                                         title="Youtube: Hakim Gym"/></a>
+    </div>
+    <div style="margin-left: -35%;">
+        <p><b>NOVĚ OTEVŘENO!</b></p>
+        <p>Příjímáme Multisport karty</p>
+        <p>Platby prozatím pouze v hotovosti</p>
+    </div>
+    <div class="address">
+        <p>HAKIM GYM Kladno</p>
+        <p>NC OÁZA</p>
+        <p>Arménská 3277, 272 01, Kladno</p>
+    </div>
     <div class="map">
         <iframe src="https://www.google.com/maps/embed/v1/place?q=Arm%C3%A9nsk%C3%A1%203277%2C%20272%2001%2C%20Kladno&key=AIzaSyA-A0_8ow-U-pgEl_1WcWeNSJyWRoIzy40"></iframe>
     </div>

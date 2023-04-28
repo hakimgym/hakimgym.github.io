@@ -1,18 +1,21 @@
 html {
-    width: 100%;
-    min-height: 100vh;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
 
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    width: 100%;
+    height: 100%;
 }
 
 header {
-    background-color: #333;
+    background-image: linear-gradient(to bottom, #333, #222, #151515);
     color: white;
     width: 100%;
-    height: 10vh;
+    height: 10%;
     display: flex;
     justify-content: center;
 }
@@ -24,8 +27,20 @@ header {
     width: 95%;
 }
 
-.logo {
-    width: 100px;
+.home-button {
+    width: 6%;
+    height: 100%;
+    margin-bottom: -1vh;
+}
+
+.home-button img {
+    width: 100%;
+    height: 100%;
+}
+
+.social-media {
+    margin-left: 2%;
+    width: auto;
 }
 
 .social-media a {
@@ -35,14 +50,18 @@ header {
 }
 
 .social-media a img {
-    width: 30px;
-    height: 30px;
+    width: 5%;
+    height: 5%;
     transition: 0.5s;
+    margin: auto 2%;
 }
 
 .social-media a img:hover {
-    filter: hue-rotate(120deg);
+    box-shadow: 0 0 10px #2ab62a;
+    background-color: mediumseagreen;
+    border-radius: 10px;
     cursor: pointer;
+    opacity: 0.6;
 }
 
 .sections {
@@ -56,6 +75,8 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    transition: 0.4s ease-out;
+    text-decoration-color: white;
 }
 
 .section a {
@@ -65,10 +86,9 @@ header {
 }
 
 .section p {
-    font-family: Chilanka;
+    font-family: Irish Grover, Arial;
     color: white;
-    font-weight: bolder;
-    font-size: x-large;
+    font-size: xx-large;
 }
 
 .section-image {
@@ -77,41 +97,90 @@ header {
     border-radius: 100%;
 }
 
-.section-image:hover {
+.section:hover {
     transform: scale(1.15);
     cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: white;
 }
 
 footer {
     background-color: #000;
     color: white;
-    padding: 20px;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 25vh;
+    height: 20%;
+    box-sizing: border-box;
 }
 
 .map {
-    width: 100%;
+    width: max-content;
+    height: 60%;
 }
 
 .map iframe {
-    width: 100%;
-    height: 200px;
+    max-width: 40vw;
+    max-height: 100%;
+    border-radius: 20px;
+    margin-left: -25%;
+    margin-top: -2%;
 }
 
 .address {
-    padding: 30px;
-    font-size: x-large;
-    font-family: "Roboto Thin"
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+    font-family: Rachana;
+    width: 30%;
+    max-height: 60%;
+}
+
+.address p {
+    margin: 0;
+    padding: 1%;
 }
 
 main {
-    height: 60vh;
-    background-image: linear-gradient(to top, black, #63c917);
+    height: 70%;
+    background-image: linear-gradient(to bottom, black, black, #96fd6c);
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.contact, .opening-hours {
+    transition: 1s;
+}
+
+.contact:hover, .opening-hours:hover {
+    color: #63c917;
+}
+
+.dropdown-btn {
+    background: none;
+    height: 7%;
+    width: 3%;
+    border: none;
+    transition: 0.2s;
+}
+
+.dropdown-btn:hover {
+    cursor: pointer;
+    backdrop-filter: brightness(2);
+    border-radius: 20%;
+}
+
+.dropdown-btn img {
+    width: 100%;
+    height: 100%;
+}
+
+footer p {
+    transition: 0.7s;
+}
+
+footer p:hover {
+    color: #96fd6c;
 }
