@@ -24,10 +24,19 @@
             Otevírací doba: Po-Ne 6:00 - 22:00
         </div>
         <div class="contact">
-            Tel: +420 777 357 382 | E-mail: hakim@email.cz
+            ☎️ +420 777 357 382&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  ✉️ hakim@email.cz
         </div>
-        <button class="dropdown-btn"><img src="/img/dropdown.png" alt="dropdown button" title="Rozbalit nabídku"/>
-        </button>
+        <button id="dropdownButton" class="dropdown-btn"><img src="/img/dropdown.png" alt="dropdown button"
+                                                              title="Rozbalit nabídku"/></button>
+        <div id="dropdownMenu" class="dropdown-menu">
+            <a href="#">Fitness</a>
+            <a href="#">Fighting</a>
+            <a href="#">Ostatní služby</a>
+            <a href="#">Jak se k nám dostat?</a>
+            <a href="#">O nás</a>
+            <a href="#">Kontakt</a>
+            <a href="#">Kariéra</a>
+        </div>
     </div>
 </header>
 
@@ -51,7 +60,7 @@
         </div>
     </div>
     <div class="ticker">
-        <span class="ticker__text">POSILOVNA  |  KARDIOZÓNA  |  CROSSFIT ZÓNA  |  TĚLOCVIČNA PRO BOJOVÉ SPORTY  |  ZÓNA PRO SKUPINOVÉ LEKCE  |  MASÁŽE  |  FYZIOTERAPIE  |  SOLÁRIUM  |  INFRASAUNY  |  BARBER SHOP</span>
+        <span class="ticker__text">POSILOVNA &nbsp;| &nbsp; KARDIOZÓNA &nbsp; | &nbsp; CROSSFIT ZÓNA &nbsp; | &nbsp; TĚLOCVIČNA PRO BOJOVÉ SPORTY &nbsp; | &nbsp; ZÓNA PRO SKUPINOVÉ LEKCE &nbsp; | &nbsp; MASÁŽE &nbsp; | &nbsp; FYZIOTERAPIE &nbsp; | &nbsp; SOLÁRIUM &nbsp; | &nbsp; INFRASAUNY &nbsp; | &nbsp; BARBER SHOP</span>
     </div>
 </main>
 
@@ -67,13 +76,13 @@
                                                                          style="transform: scale(1.18)"
                                                                          title="Youtube: Hakim Gym"/></a>
     </div>
-    <div style="margin-left: -35%;">
+    <div class="notes">
         <p><b>NOVĚ OTEVŘENO!</b></p>
         <p>Příjímáme Multisport karty</p>
         <p>Platby prozatím pouze v hotovosti</p>
     </div>
     <div class="address">
-        <p>HAKIM GYM Kladno</p>
+        <p style="font-weight: bolder; font-size: larger">HAKIM GYM Kladno</p>
         <p>NC OÁZA</p>
         <p>Arménská 3277, 272 01, Kladno</p>
     </div>
@@ -82,4 +91,10 @@
     </div>
 </footer>
 </body>
+<script>
+    document.getElementById('dropdownButton').addEventListener('click', function () {
+        const dropdownMenu = document.getElementById('dropdownMenu');
+        dropdownMenu.classList.toggle('visible');
+    });
+</script>
 </html>
