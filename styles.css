@@ -6,7 +6,7 @@ html {
 
 body {
     margin: 0;
-    font-family: Ysabeau, sans-serif;
+    font-family: Pathway Extreme, sans-serif;
     width: 100%;
     height: 100%;
 }
@@ -35,12 +35,12 @@ header {
 .opening-hours, .contact {
     max-width: 25%;
     max-height: 80%;
-    font-size: x-large;
+    font-size: large;
     font-optical-sizing: auto;
 }
 
 .opening-hours {
-    margin-left: -40%;
+    margin-left: -60%;
 }
 
 .home-button {
@@ -168,18 +168,20 @@ main {
 }
 
 .notes {
-    margin-top: -1.7%;
     margin-left: -40%;
-    height: 40%;
-    max-height: 90%;
+    max-height: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    width: 25%;
+    max-width: 25%;
 }
 
 .notes p {
-    margin-bottom: -0.1vw;
+    font-size: medium;
+    max-height: 30%;
+    margin: 0;
 }
 
 .dropdown-btn {
@@ -271,11 +273,18 @@ footer p:hover {
 
 .container {
     width: 80%;
-    height: 60%;
+    height: 95%;
     background-color: #111;
-    box-shadow: 0 0 10px 1px #63c917;
+    box-shadow: 1px 1px 10px 1px #63c917;
     display: flex;
-    border-radius: 0 2rem 2rem 0;
+    box-sizing: border-box;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%
 }
 
 .options {
@@ -284,6 +293,7 @@ footer p:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-sizing: border-box;
 }
 
 .option {
@@ -292,8 +302,9 @@ footer p:hover {
     display: flex;
     align-items: center;
     padding: 0.5rem 0;
-    border-bottom: 1px solid green;
+    border: 1px solid green;
     flex-grow: 1;
+    z-index: 2;
 }
 
 .option:hover button {
@@ -303,15 +314,97 @@ footer p:hover {
 
 .option:hover {
     background-image: linear-gradient(to left, #222, #151515, #111);
-
 }
 
 .option-btn {
     color: white;
     font-size: larger;
     border: none;
-    padding-left: 10%;
+    padding: 0 10%;
     background: none;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+
+#content {
+    width: 100%;
+    max-width: 100%;
+    background-color: #111;
+}
+
+#content h1, h3, p {
+    color: white;
+    padding: 1% 5%;
+    line-height: 1.5;
+    letter-spacing: 0.05rem;
+    text-align: justify;
+}
+
+.content-wrapper{
+    max-height: 100%;
+    overflow-y: scroll;
+}
+
+#rozpisTreninku {
+    padding-bottom: 5%;
+}
+
+#rozpisTreninku table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #092c09;
+
+}
+
+#rozpisTreninku table tr th,
+#rozpisTreninku table tr td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#rozpisTreninku tbody {
+    width: 100%;
+}
+
+#rozpisTreninku table tr th,
+#rozpisTreninku table tr td {
+    color: white;
+}
+
+#rozpisTreninku table tr th {
+    background-color: #222;
+    padding: 0.5rem;
+}
+
+#rozpisTreninku table tr td {
+    background-color: #353635;
+}
+
+#rozpisTreninku table td {
+    padding: 50%;
+    flex-grow: 1;
+    border: 1px solid darkgreen;
+}
+
+#rozpisTreninku table th {
+    max-width: 10%;
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+}
+
+#rozpisTreninku th {
+    display: flex;
+    justify-content: center;
+}
+
+#rozpisTreninku .row:hover * {
+    color: #96fd6c;
+    background-color: #111;
 }
 
 /* Malá zařízení (telefony, 576px a více) */
@@ -408,4 +501,40 @@ footer p:hover {
 /* Retina displeje (2x a více) */
 @media screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
     /* Styly pro Retina displeje */
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+::-webkit-scrollbar-track {
+background: #222;
+}
+::-webkit-scrollbar-thumb {
+background: #3d9300;
+}
+
+.scroll-bar {
+    width: 1rem;
+    background: #0f6e01;
+    position: absolute;
+    z-index: 10;
+}
+.scroll-bar:hover {
+    background: #111; /* při najetí myši */
+}
+
+.table {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row {
+    display: flex;
+    flex-basis: 100%;
+}
+
+.cell {
+    flex-basis: calc(100% / 7);
+    flex-grow: 1;
+    flex-shrink: 1;
 }

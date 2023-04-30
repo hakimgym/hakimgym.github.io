@@ -2,22 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Fitness a fighting centrum Kladno (OC OÁZA).">
-    <meta name="keywords"
-          content="posilovna, kardiozóna, crossfit zóna, tělocvična pro bojové sporty, zóna pro skupinové lekce, masáže, fyzioterapie, solárium, infrasauny, barber shop">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Fitness a fighting centrum Kladno (OC OÁZA)." name="description">
+    <meta content="posilovna, kardiozóna, crossfit zóna, tělocvična pro bojové sporty, zóna pro skupinové lekce, masáže, fyzioterapie, solárium, infrasauny, barber shop"
+          name="keywords">
     <title>HAKIM GYM Kladno</title>
-    <link rel="shortcut icon" href="/assets/logo.png">
-    <link rel="stylesheet" href="/styles.css">
+    <link href="/assets/logo.png" rel="shortcut icon">
+    <link href="/styles.css" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Ysabeau:wght@500&display=swap');    </style>
+        @import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@500&display=swap');
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 <header>
     <div class="top-panel">
-        <a href="index.html" class="home-button">
-            <img src="/assets/logo.png" alt="Logo fitness centra" class="logo" style="margin-left: -1vw"
+        <a class="home-button" href="index.html">
+            <img alt="Logo fitness centra" class="logo" src="/assets/logo.png" style="margin-left: -1vw"
                  title="Hlavní stránka">
         </a>
         <p class="hakim">HAKIM GYM Kladno</p>
@@ -28,9 +29,9 @@
         <div class="contact">
             ☎️ +420 777 357 382&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ✉️ hakim@email.cz
         </div>
-        <button id="dropdownButton" class="dropdown-btn"><img src="/assets/dropdown.png" alt="dropdown button"
+        <button class="dropdown-btn" id="dropdownButton"><img alt="dropdown button" src="/assets/dropdown.png"
                                                               title="Rozbalit nabídku"/></button>
-        <div id="dropdownMenu" class="dropdown-menu">
+        <div class="dropdown-menu" id="dropdownMenu">
             <a href="fitness.html">Fitness</a>
             <a href="fighting.html">Fighting</a>
             <a href="ostatnisluzby.html">Ostatní služby</a>
@@ -58,27 +59,26 @@
                 <button class="option-btn" id="galeriefight">Galerie</button>
             </div>
             <div class="option">
-                <button class="option-btn" id="soukromelekcefight">Soukromé lekce</button>
+                <button class="option-btn" id="sponozorifight">Sponozoři</button>
             </div>
             <div class="option">
                 <button class="option-btn" id="kzakoupenifight">K zakoupení</button>
             </div>
         </div>
-        <div class="content" style="display: flex; align-items: center; justify-content: center; width: 100%">
-            <p style="font-size: xxx-large; color: white">TEST</p>
+        <div id="content" style="width: 100%">
         </div>
     </div>
 </main>
 
 <footer>
     <div class="social-media">
-        <a href="https://www.facebook.com/profile.php?id=100057582725641" target="_blank"><img src="/assets/fb.png"
-                                                                                               alt="Facebook"
+        <a href="https://www.facebook.com/profile.php?id=100057582725641" target="_blank"><img alt="Facebook"
+                                                                                               src="/assets/fb.png"
                                                                                                title="Facebook: Hakim Gym"/></a>
-        <a href="https://www.instagram.com/hakim.fitness/" target="_blank"><img src="/assets/ig.png" alt="Instagram"
+        <a href="https://www.instagram.com/hakim.fitness/" target="_blank"><img alt="Instagram" src="/assets/ig.png"
                                                                                 style="transform: scale(1.18)"
                                                                                 title="Instagram: Hakim Gym"/></a>
-        <a href="https://www.youtube.com/@HakimGym" target="_blank"><img src="/assets/yt.png" alt="Youtube"
+        <a href="https://www.youtube.com/@HakimGym" target="_blank"><img alt="Youtube" src="/assets/yt.png"
                                                                          style="transform: scale(1.18)"
                                                                          title="Youtube: Hakim Gym"/></a>
     </div>
@@ -101,6 +101,129 @@
     document.getElementById('dropdownButton').addEventListener('click', function () {
         const dropdownMenu = document.getElementById('dropdownMenu');
         dropdownMenu.classList.toggle('visible');
+    });
+    const contents = {
+        "prvnitreninkfight": `
+        <div id="prvnitreninkfight" class="content-wrapper">
+            <h1 class="content-title">První trénink</h1>
+            <h3 class="sub-title">Nezáleží na věku, pohlaví nebo zkušenostech. Záleží jen na odhodlání. I Ty můžeš být šampiónem.</h3>
+            <p class="content-description">První trénink thaiboxu nebo boxu může být pro mnohé začátečníky zážitek plný nejistoty a obav. Nicméně, pokud jste se rozhodli vyzkoušet tento úžasný sport, připravte se na to, že vašemu tělu i mysli přinese mnoho pozitivních změn. Na prvním tréninku můžete očekávat, že se seznámíte s základními technikami, jako jsou údery, kopy a obranné pohyby. Instruktoři jsou tady, aby vám pomohli a podpořili vás na každém kroku vaší cesty. <br/><br/>Nenechte se odradit svými obavami a připravte se na to, že tento sport Vám může změnit život. Thaibox a box vám mohou pomoci zlepšit fyzickou kondici, zvýšit sebevědomí, učit se disciplíně a vytvořit nová přátelství.<br/><br/>Před návštěvou prvního tréninku si připravte několik nezbytných věcí, které budete potřebovat, jako jsou bandáže na ruce, boxerské rukavice, pití, ručník a vhodné sportovní oblečení. Bandáže chrání vaše klouby a kosti v rukou při úderech, zatímco boxerské rukavice tlumí nárazy a zajišťují bezpečnost pro vás i vašeho sparring partnera.<br/><br/>Pokud nemáte vlastní vybavení, nezoufejte. Většinu potřebných věcí lze zakoupit na recepci sportovního centra, kde se tréninky konají. Stačí jen přijít s odhodláním a otevřenou myslí, a věřte, že vaše první zkušenost s thaiboxem nebo boxem bude nezapomenutelná a odměňující. Na závěr bychom rádi dodali, že první trénink u nás máte <b style="text-decoration: underline">ZDARMA</b>.</p>
+        </div>
+    `,
+        "rozpistreninkufight": `
+        <div class="content-wrapper" id="rozpistreninkufight">
+  <h1 class="content-title">Rozpis tréninků</h1>
+  <div id="rozpisTreninku">
+    <table class="table">
+  <tr class="row">
+    <th class="cell">Pondělí</th>
+    <td class="cell"><p>16:00 - 17:00 <b>Thaibox děti (5-9 let)</b></p></td>
+    <td class="cell"><p>17:00 - 18:00 <b>Thaibox začátečníci + junioři</b></p></td>
+  </tr>
+  <tr class="row">
+    <th class="cell">Úterý</th>
+    <td class="cell"><p>16:00 - 17:15 <b>Box</b></p></td>
+    <td class="cell"></td>
+  </tr>
+  <tr class="row">
+    <th class="cell">Středa</th>
+    <td class="cell"><p>18:00 - 19:00 <b>Thaibox pokročilí</b></p></td>
+    <td class="cell"></td>
+  </tr>
+  <tr class="row">
+    <th class="cell">Čtvrtek</th>
+    <td class="cell"><p>16:00 - 17:00 <b>Thaibox děti (5-9 let)</b></p></td>
+    <td class="cell"><p>17:00 - 18:00 <b>Thaibox začátečníci + junioři</b></p></td>
+  </tr>
+  <tr class="row">
+    <th class="cell">Pátek</th>
+    <td class="cell"><p>16:00 - 17:15 <b>Box</b></p></td>
+    <td class="cell"></td>
+  </tr>
+  <tr class="row">
+    <th class="cell">Sobota</th>
+    <td class="cell"><p>8:00 - 10:00 <b>Silový trénink</b></p></td>
+    <td class="cell"></td>
+  </tr>
+  <tr class="row">
+    <th class="cell">Neděle</th>
+    <td class="cell"><p>18:00 - 19:00 <b>Kruhový trénink</b></p></td>
+    <td class="cell"></td>
+  </tr>
+</table>
+  </div>
+</div>
+    `,
+        "cenikfight": `
+        <div id="cenikfight" class="content-wrapper">
+            <h1 class="content-title">Ceník</h1>
+            <p class="content-description">
+            <b>DOSPĚLÍ</b>:<br>
+            1 trénink ................ 150 Kč<br>
+            11 tréninků ........ 1500 Kč<br>
+            <br>
+            <br>
+            <b>DĚTI</b>:<br>
+            1/2 roku ............. 3200 Kč<br>
+            1 měsíc ................ 900 Kč<br>
+            <br>
+            <br>
+            <b>SOUKROMÉ/INDIVIDUÁLNÍ LEKCE</b>:<br>
+            1 až 2 zájemci ................ 700 Kč / 1 hodina<br>
+            3 až 4 zájemci ............ 1000 Kč / 1 hodina<br>
+            <br>
+            <br>
+            <b style="font-size: larger">PŘIJÍMÁME MULTISPORT KARTY!</b>
+            </p>
+        </div>
+    `,
+        "galeriefight": `
+        <div id="galeriefight" class="content-wrapper">
+            <h1 class="content-title">Galerie</h1>
+            <p class="content-description">galerie galerie galerie galerie galerie galerie galerie galerie galerie galerie galerie galerie galerie galerie galerie galerie galerie galerie galerie galerie galerie galerie galerie galerie galerie galerie galerie galerie </p>
+        </div>
+    `,
+        "sponozorifight": `
+        <div id="sponozorifight" class="content-wrapper">
+            <h1 class="content-title">Sponzoři:</h1>
+            <p class="content-description">SPONOZOR SPONOZOR SPONOZOR SPONOZOR SPONOZOR SPONOZOR SPONOZOR SPONOZOR SPONOZOR SPONOZOR SPONOZOR SPONOZOR SPONOZOR </p>
+            <img class="content-image" src="path/to/image2.jpg" alt="Obrázek rozpisu tréninků" />
+        </div>
+    `,
+        "kzakoupenifight": `
+        <div id="kzakoupenifight" class="content-wrapper">
+            <h1 class="content-title">K zakoupení u nás na recepci:</h1>
+            <p class="content-description">Popis rozpisu tréninků</p>
+            <img class="content-image" src="path/to/image2.jpg" alt="Obrázek rozpisu tréninků" />
+        </div>
+    `
+    };
+
+    let contentDiv = document.getElementById("content");
+
+    function showContent(id) {
+        if (contents.hasOwnProperty(id)) {
+            contentDiv.innerHTML = contents[id];
+        } else {
+            contentDiv.innerHTML = "<p>Nepodařilo se načíst obsah.</p>";
+        }
+    }
+
+    const prvnitreninkfightBtn = document.getElementById("prvnitreninkfight");
+    const rozpistreninkufightBtn = document.getElementById("rozpistreninkufight");
+    const cenikfightBtn = document.getElementById("cenikfight");
+    const galeriefightBtn = document.getElementById("galeriefight");
+    const sponozorifightBtn = document.getElementById("sponozorifight");
+    const kzakoupenifightBtn = document.getElementById("kzakoupenifight");
+
+    prvnitreninkfightBtn.addEventListener("click", () => showContent("prvnitreninkfight"));
+    rozpistreninkufightBtn.addEventListener("click", () => showContent("rozpistreninkufight"));
+    cenikfightBtn.addEventListener("click", () => showContent("cenikfight"));
+    galeriefightBtn.addEventListener("click", () => showContent("galeriefight"));
+    sponozorifightBtn.addEventListener("click", () => showContent("sponozorifight"));
+    kzakoupenifightBtn.addEventListener("click", () => showContent("kzakoupenifight"));
+    document.addEventListener("DOMContentLoaded", () => {
+        showContent("prvnitreninkfight");
     });
 </script>
 </html>
