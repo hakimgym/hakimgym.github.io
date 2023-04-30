@@ -404,7 +404,7 @@ footer p:hover {
 
 #rozpisTreninku .row:hover * {
     color: #96fd6c;
-    background-color: #111;
+    background-color: #222;
 }
 
 /* Malá zařízení (telefony, 576px a více) */
