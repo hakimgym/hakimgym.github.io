@@ -284,7 +284,8 @@ footer p:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .options {
@@ -305,6 +306,7 @@ footer p:hover {
     border: 1px solid green;
     flex-grow: 1;
     z-index: 2;
+    box-sizing: border-box;
 }
 
 .option:hover button {
@@ -338,10 +340,16 @@ footer p:hover {
     padding: 1% 5%;
     line-height: 1.5;
     letter-spacing: 0.05rem;
-    text-align: justify;
+    text-align: center;
 }
 
-.content-wrapper{
+#content h1 {
+    padding: 2% 5% 1%;
+    text-decoration: underline;
+    font-size: xxx-large;
+}
+
+.content-wrapper {
     max-height: 100%;
     overflow-y: scroll;
 }
@@ -405,6 +413,21 @@ footer p:hover {
 #rozpisTreninku .row:hover * {
     color: #96fd6c;
     background-color: #222;
+}
+
+.embed-video, .gallery-pic {
+    margin: 5% 10%;
+    width: 80%;
+    height: 30rem;
+    border-radius: 1rem;
+}
+
+.content-description {
+    position: relative;
+}
+
+#vyska-doladit {
+    height: 40rem;
 }
 
 /* Malá zařízení (telefony, 576px a více) */
@@ -506,11 +529,17 @@ footer p:hover {
 ::-webkit-scrollbar {
     width: 1rem;
 }
+
 ::-webkit-scrollbar-track {
-background: #222;
+    background: #222;
 }
+
 ::-webkit-scrollbar-thumb {
-background: #3d9300;
+    background: #3d9300;
+}
+
+::-webkit-scrollbar:hover {
+    cursor: pointer;
 }
 
 .scroll-bar {
@@ -518,9 +547,6 @@ background: #3d9300;
     background: #0f6e01;
     position: absolute;
     z-index: 10;
-}
-.scroll-bar:hover {
-    background: #111; /* při najetí myši */
 }
 
 .table {
