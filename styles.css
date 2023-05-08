@@ -1,26 +1,8 @@
-:root {
-    --clr-primary-200: #FFF;
-    --clr-primary-400: #63c917;
-    --clr-primary-500: #0f6e01;
-    --clr-primary-700: #444;
-    --clr-primary-800: #333;
-    --clr-primary-900: #222;
-    --clr-header: #414141;
-    --clr-filter: hsla(0, 1%, 25%, 0.54);
-
-    --ff-primary: 'Roboto', sans-serif;
-    --ff-secondary: 'Playfair Display', serif;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
 body {
     margin: 0;
-    width: 100%
+    width: 100%;
+    font-family: 'Saira Semi Condensed', cursive;
+    letter-spacing: 1px;
 }
 
 .header {
@@ -40,8 +22,9 @@ body {
 }
 
 .header-logo {
-    height: 70%;
-    width: auto;
+    height: 40%;
+    margin: 0 2rem;
+    opacity: 1;
 }
 
 .header button {
@@ -56,8 +39,6 @@ body {
 
 .header button:hover {
     cursor: pointer;
-    border-radius: 1rem;
-    background-color: #222;
 }
 
 main {
@@ -66,16 +47,16 @@ main {
 }
 
 main .main-banner img {
-    width: 100%;
-    height: auto;
+    overflow-x: hidden;
+    width: 100svw;
 }
 
 .accordion {
     border-radius: 4px;
     background-color: #333;
     font-size: 1.25rem;
-    font-weight: bolder;
     border: none;
+    font-weight: bolder;
 }
 
 .accordion-header {
@@ -84,6 +65,7 @@ main .main-banner img {
     background-color: #111;
     border: none;
     transition: 0.5s;
+    text-align: center;
 }
 
 .accordion-header:hover {
@@ -91,17 +73,10 @@ main .main-banner img {
 }
 
 .accordion-content {
-    padding: 0.25rem 0;
+    padding: 0.1rem 0;
     display: none;
     background-color: #3d9300;
     color: white;
-}
-
-body {
-    width: 100%;
-    margin: 0 auto;
-    background: white;
-    font-family: "Arial", serif;
 }
 
 .dropdown-menu {
@@ -119,5 +94,5 @@ body {
 }
 
 .accordion {
-    color: #63c917;
+    color: #00aa44;
 }
