@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Fitness a fighting centrum Kladno (OC OÁZA)." name="description">
+    <meta content="posilovna, kardiozóna, crossfit zóna, tělocvična pro bojové sporty, zóna pro skupinové lekce, masáže, fyzioterapie, solárium, infrasauny, barber shop"
+          name="keywords">
+    <title>HAKIM GYM Kladno</title>
+    <link href="/assets/logo.png" rel="shortcut icon">
+    <link href="/old/styles.css.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@500&display=swap');
+    </style>
+</head>
+<body>
+<header>
+    <div class="top-panel">
+        <a class="home-button" href="index.html">
+            <img alt="Logo fitness centra" class="logo" src="/assets/logo.png" style="margin-left: -1vw"
+                 title="Hlavní stránka">
+        </a>
+        <p class="hakim">HAKIM GYM Kladno</p>
+        <p class="tovarna">Továrna na šampiony</p>
+        <div class="opening-hours" style="max-width: 20%">
+            Otevírací doba: Po-Ne 6:00 - 22:00
+        </div>
+        <div class="contact">
+            ☎️ +420 774 153 944&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ✉️ info@hakimfitness.cz
+        </div>
+        <button class="dropdown-btn" id="dropdownButton"><img alt="dropdown button" src="/assets/dropdown.png"
+                                                              title="Rozbalit nabídku"/></button>
+        <div class="dropdown-menu" id="dropdownMenu">
+            <a href="fighting.html">Fighting</a>
+            <a href="fitness.html">Fitness</a>
+            <a href="ostatnisluzby.html">Ostatní služby</a>
+            <a href="volnepracovnipozice.html">Volné pracovní pozice</a>
+            <a href="jakseknamdostat.html">Jak se k nám dostat?</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="onas.html">O nás</a>
+        </div>
+    </div>
+</header>
+
+<main style="background-image: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 60%, rgba(0,0,0,0.7) 100%), url('gym.png'); background-size: cover; background-repeat: no-repeat">
+    <div class="container">
+        <div class="options">
+            <div class="option">
+                <button class="option-btn" id="cenikfit">Ceník</button>
+            </div>
+            <div class="option">
+                <button class="option-btn" id="trenerifit">Trenéři</button>
+            </div>
+            <div class="option">
+                <button class="option-btn" id="rezervacefit">Rezervace</button>
+            </div>
+            <div class="option">
+                <button class="option-btn" id="skupinovelekcefit">Skupinové lekce</button>
+            </div>
+            <div class="option">
+                <button class="option-btn" id="akceoznamenifit">Akce a oznámení</button>
+            </div>
+            <div class="option">
+                <button class="option-btn" id="galeriefit">Galerie</button>
+            </div>
+        </div>
+        <div id="content" style="width: 100%">
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="social-media">
+        <a href="https://www.facebook.com/profile.php?id=100057582725641" target="_blank"><img alt="Facebook"
+                                                                                               src="/assets/fb.png"
+                                                                                               title="Facebook: Hakim Gym"/></a>
+        <a href="https://www.instagram.com/hakim.fitness/" target="_blank"><img alt="Instagram" src="/assets/ig.png"
+                                                                                style="transform: scale(1.18)"
+                                                                                title="Instagram: Hakim Gym"/></a>
+        <a href="https://www.youtube.com/@HakimGym" target="_blank"><img alt="YouTube" src="/assets/yt.png"
+                                                                         style="transform: scale(1.48)"
+                                                                         title="YouTube: Hakim Gym"/></a>
+        <a href="https://www.tiktok.com/discover/pavelhakimmajer" target="_blank"><img alt="Tiktok"
+                                                                                       src="/assets/tiktok.png"
+                                                                                       title="TikTok: Hakim Gym"/></a>
+    </div>
+    <div class="notes">
+        <p><b>NOVĚ OTEVŘENO!</b></p>
+        <p>Příjímáme Multisport karty</p>
+        <p>Platby prozatím pouze v hotovosti</p>
+    </div>
+    <div class="address">
+        <p style="font-weight: bolder; font-size: larger">HAKIM GYM Kladno</p>
+        <p>NC OÁZA</p>
+        <p>Arménská 3277, 272 01, Kladno</p>
+    </div>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed/v1/place?q=Arm%C3%A9nsk%C3%A1%203277%2C%20272%2001%2C%20Kladno&key=AIzaSyA-A0_8ow-U-pgEl_1WcWeNSJyWRoIzy40"></iframe>
+    </div>
+</footer>
+</body>
+<script>
+    document.getElementById('dropdownButton').addEventListener('click', function () {
+        const dropdownMenu = document.getElementById('dropdownMenu');
+        dropdownMenu.classList.toggle('visible');
+    });
+    const contents = {
+        "cenikfit": `
+        <div id="cenikfit" class="content-wrapper">
+            <h1 class="content-title">Ceník</h1>
+            <p style="line-height: 2" class="content-description">
+            1 vstup ................ 150 Kč<br>
+            11 vstupů ........ 1500 Kč<br>
+            <br>
+            1 měsíc ............. 1300 Kč<br>
+            3 měsíc ................ 3000 Kč<br>
+            1 rok ................ 10000 Kč<br>
+        </div>
+    `,
+        "trenerifit": `
+        <div class="content-wrapper" id="trenerifit">
+            <h1 class="content-title">Trenéři</h1>
+        </div>
+    `,
+        "rezervacefit": `
+        <div id="rezervacefit" class="content-wrapper">
+            <h1 class="content-title">Rezervace</h1>
+        </div>
+    `,
+        "skupinovelekcefit": `
+        <div class="content-wrapper" id="skupinovelekcefit">
+            <h1 class="content-title">Skupinové lekce</h1>
+        </div>
+    `,
+        "akceoznamenifit": `
+        <div class="content-wrapper" id="akceoznamenifit">
+            <h1 class="content-title">Akce a oznámení</h1>
+        </div>
+    `,
+        "galeriefit": `
+        <div class="content-wrapper" id="galeriefit">
+            <h1 class="content-title">Galerie</h1>
+        </div>
+    `
+    };
+
+    let contentDiv = document.getElementById("content");
+
+    function showContent(id) {
+        if (contents.hasOwnProperty(id)) {
+            contentDiv.innerHTML = contents[id];
+        } else {
+            contentDiv.innerHTML = "<p>Nepodařilo se načíst obsah.</p>";
+        }
+    }
+
+    const cenikfitBtn = document.getElementById("cenikfit");
+    const trenerifitBtn = document.getElementById("trenerifit");
+    const rezervacefitBtn = document.getElementById("rezervacefit");
+    const skupinovelekcefitBtn = document.getElementById("skupinovelekcefit");
+    const akceoznamenifitBtn = document.getElementById("akceoznamenifit");
+    const galeriefitBtn = document.getElementById("galeriefit");
+
+    cenikfitBtn.addEventListener("click", () => showContent("cenikfit"));
+    trenerifitBtn.addEventListener("click", () => showContent("trenerifit"));
+    rezervacefitBtn.addEventListener("click", () => showContent("rezervacefit"));
+    skupinovelekcefitBtn.addEventListener("click", () => showContent("skupinovelekcefit"));
+    akceoznamenifitBtn.addEventListener("click", () => showContent("akceoznamenifit"));
+    galeriefitBtn.addEventListener("click", () => showContent("galeriefit"));
+    document.addEventListener("DOMContentLoaded", () => {
+        showContent("cenikfit");
+    });
+</script>
+</html>

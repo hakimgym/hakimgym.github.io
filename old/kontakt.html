@@ -8,7 +8,7 @@
           content="posilovna, kardiozóna, crossfit zóna, tělocvična pro bojové sporty, zóna pro skupinové lekce, masáže, fyzioterapie, solárium, infrasauny, barber shop">
     <title>HAKIM GYM Kladno</title>
     <link rel="shortcut icon" href="/assets/logo.png">
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/old/styles.css.css">
     <style>
 @import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@500&display=swap');
 </style>
@@ -26,13 +26,13 @@
             Otevírací doba: Po-Ne 6:00 - 22:00
         </div>
         <div class="contact">
-            ☎️ +420 777 357 382&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ✉️ hakim@email.cz
+            ☎️ +420 774 153 944&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ✉️ info@hakimfitness.cz
         </div>
         <button id="dropdownButton" class="dropdown-btn"><img src="/assets/dropdown.png" alt="dropdown button"
                                                               title="Rozbalit nabídku"/></button>
-        <div id="dropdownMenu" class="dropdown-menu">
-            <a href="fitness.html">Fitness</a>
+        <div class="dropdown-menu" id="dropdownMenu">
             <a href="fighting.html">Fighting</a>
+            <a href="fitness.html">Fitness</a>
             <a href="ostatnisluzby.html">Ostatní služby</a>
             <a href="volnepracovnipozice.html">Volné pracovní pozice</a>
             <a href="jakseknamdostat.html">Jak se k nám dostat?</a>
@@ -42,44 +42,44 @@
     </div>
 </header>
 
-<main style="background-image: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 60%, rgba(0,0,0,1) 100%), url('assets/solarko.jpg'); background-size: cover; background-position: right; background-repeat: no-repeat">
-    <div class="container">
-        <div class="options">
-            <div class="option">
-                <button class="option-btn" id="skupinovelekce">Skupinové lekce</button>
-            </div>
-            <div class="option">
-                <button class="option-btn" id="rezervaceostatni">Rezervace</button>
-            </div>
-            <div class="option">
-                <button class="option-btn" id="masazefyzio">Masáže a fyzioterapie</button>
-            </div>
-            <div class="option">
-                <button class="option-btn" id="solarko">Solárium</button>
-            </div>
-            <div class="option">
-                <button class="option-btn" id="infrasauny">Infrasauny</button>
-            </div>
-            <div class="option">
-                <button class="option-btn" id="barbershop">Barber shop</button>
-            </div>
+<main>
+    <div class="sections">
+        <div class="section">
+            <a href="fighting.html">
+                <img src="/assets/fighter.png" alt="Fighting" class="section-image">
+            </a>
+            <p>FIGHTING</p>
         </div>
-        <div id="content" style="width: 100%">
+        <div style="display: flex; justify-content: center; align-items: center">
+            <img src="/assets/logo.png" alt="Logo" class="section-image"
+                 style="transform: scale(3); margin-top: -25vh; max-width: 40vw; max-height: 40vh">
         </div>
+        <div class="section">
+            <a href="fitness.html">
+                <img src="/assets/lifter.png" alt="Fitness" class="section-image">
+            </a>
+            <p>FITNESS</p>
+        </div>
+    </div>
+    <div class="ticker">
+        <span class="ticker__text">POSILOVNA &nbsp;| &nbsp; KARDIOZÓNA &nbsp; | &nbsp; CROSSFIT ZÓNA &nbsp; | &nbsp; TĚLOCVIČNA PRO BOJOVÉ SPORTY &nbsp; | &nbsp; ZÓNA PRO SKUPINOVÉ LEKCE &nbsp; | &nbsp; MASÁŽE &nbsp; | &nbsp; FYZIOTERAPIE &nbsp; | &nbsp; SOLÁRIUM &nbsp; | &nbsp; INFRASAUNY &nbsp; | &nbsp; BARBER SHOP</span>
     </div>
 </main>
 
 <footer>
     <div class="social-media">
-        <a href="https://www.facebook.com/profile.php?id=100057582725641" target="_blank"><img src="/assets/fb.png"
-                                                                                               alt="Facebook"
+        <a href="https://www.facebook.com/profile.php?id=100057582725641" target="_blank"><img alt="Facebook"
+                                                                                               src="/assets/fb.png"
                                                                                                title="Facebook: Hakim Gym"/></a>
-        <a href="https://www.instagram.com/hakim.fitness/" target="_blank"><img src="/assets/ig.png" alt="Instagram"
+        <a href="https://www.instagram.com/hakim.fitness/" target="_blank"><img alt="Instagram" src="/assets/ig.png"
                                                                                 style="transform: scale(1.18)"
                                                                                 title="Instagram: Hakim Gym"/></a>
-        <a href="https://www.youtube.com/@HakimGym" target="_blank"><img src="/assets/yt.png" alt="Youtube"
-                                                                         style="transform: scale(1.18)"
-                                                                         title="Youtube: Hakim Gym"/></a>
+        <a href="https://www.youtube.com/@HakimGym" target="_blank"><img alt="YouTube" src="/assets/yt.png"
+                                                                         style="transform: scale(1.48)"
+                                                                         title="YouTube: Hakim Gym"/></a>
+        <a href="https://www.tiktok.com/discover/pavelhakimmajer" target="_blank"><img alt="Tiktok"
+                                                                                       src="/assets/tiktok.png"
+                                                                                       title="TikTok: Hakim Gym"/></a>
     </div>
     <div class="notes">
         <p><b>NOVĚ OTEVŘENO!</b></p>
