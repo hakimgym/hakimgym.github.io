@@ -238,27 +238,32 @@
     </div>
 
     <div class="main-banner">
-        <img alt="background image" src="assets/bg.png"/>
     </div>
-    <div class="main-banner">
-        <img alt="background image" src="assets/bg.png"/>
-    </div>
-    <div class="main-banner">
-        <img alt="background image" src="assets/bg.png"/>
-    </div>
+
 </main>
 </body>
 <script>
     document.getElementById('dropdownButton').addEventListener('click', function () {
         let dropdownMenu = document.getElementById('dropdownMenu');
         dropdownMenu.classList.toggle('visible');
+        dropdownMenu.style.visibility = 'visible';
+        dropdownMenu.style.opacity = '1';
         let hakimLogo = document.getElementsByClassName('header-logo').item(0);
         if (dropdownMenu.classList.contains('visible')) {
-            hakimLogo.src = '/assets/logo.png';
-            hakimLogo.style.height = '100%';
+            hakimLogo.style.opacity = '0';
+            setTimeout(function() {
+                hakimLogo.src = '/assets/logo.png';
+                hakimLogo.style.height = '100%';
+                hakimLogo.style.opacity = '1';
+            }, 100);
         } else {
-            hakimLogo.src = '/assets/runy.png';
-            hakimLogo.style.height = '40%';
+            hakimLogo.style.opacity = '0';
+            setTimeout(function() {
+                hakimLogo.src = '/assets/runy.png';
+                hakimLogo.style.height = '40%';
+                hakimLogo.style.opacity = '1';
+            }, 100);
+            dropdownMenu.style.opacity = '0';
         }
     });
 
