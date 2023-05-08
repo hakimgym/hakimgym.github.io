@@ -1,15 +1,26 @@
-body {
+html, body {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     width: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+body {
     font-family: 'Saira Semi Condensed', cursive;
     letter-spacing: 1px;
 }
 
 .header {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 5rem;
+    height: 6rem;
     max-height: fit-content;
     background-color: #000000;
     flex-wrap: wrap;
@@ -48,7 +59,7 @@ main {
 
 main .main-banner img {
     overflow-x: hidden;
-    width: 100svw;
+    width: 100%
 }
 
 .accordion {
@@ -62,20 +73,23 @@ main .main-banner img {
 .accordion-header {
     padding: 2rem;
     cursor: pointer;
-    background-color: #111;
+    background-image: linear-gradient(to right, #000, #222, #000);
     border: none;
     transition: 0.5s;
     text-align: center;
+    color: #FFFFFF;
 }
 
 .accordion-header:hover {
-    color: #FFFFFF;
+    color: #00aa44;
 }
 
 .accordion-content {
     padding: 0.1rem 0;
     display: none;
-    background-color: #3d9300;
+    /*background-color: #3d9300;*/
+    background-image: linear-gradient(to right, #000, #3d9300, #000);
+
     color: white;
 }
 
@@ -94,5 +108,7 @@ main .main-banner img {
 }
 
 .accordion {
-    color: #00aa44;
+    color: #00aa44
 }
+
+
