@@ -55,8 +55,20 @@ body {
 
 main {
     width: 100%;
-    height: 100rem;
+    height: 100vh;
+    position: relative;
+}
 
+#main-logo-wrapper {
+    position: absolute;
+    width: 100%;
+    display: grid;
+    place-content: center;
+    background: none;
+}
+
+#main-logo {
+    background: none;
 }
 
 main .main-banner {
@@ -71,6 +83,7 @@ main .main-banner {
     font-size: 1.25rem;
     border: none;
     font-weight: bolder;
+    z-index: 100;
 }
 
 .accordion-header {
@@ -101,12 +114,18 @@ main .main-banner {
     letter-spacing: 2px;
 }
 
+.content-description {
+    margin-top: -2.75rem;
+}
+
 .accordion-content-wrapper h3 {
     color: #63c917;
+    margin: 3rem auto;
 }
 
 .dropdown-menu {
     max-height: 0;
+    z-index: 1;
     transition: max-height 0.5s;
 }
 
@@ -122,7 +141,14 @@ main .main-banner {
     color: #00aa44
 }
 
-@media only screen and (max-width: 500px) {
+.gallery-pic {
+    width: 90%;
+    height: auto;
+    padding: 1rem 0;
+    border-radius: 25px;
+}
+
+@media only screen and (max-width: 700px) {
     .accordion-content-wrapper {
         padding: 5% 3%;
         letter-spacing: 1px;
