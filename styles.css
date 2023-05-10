@@ -124,7 +124,7 @@ main .main-banner {
 
 @media only screen and (max-device-width: 500px) {
     .accordion-content-wrapper {
-        padding: 5% 3rem;
+        padding: 5% 3%;
         letter-spacing: 1px;
         text-align: justify-all;
     }
