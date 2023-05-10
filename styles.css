@@ -100,6 +100,10 @@ main .main-banner {
     color: #00aa44;
 }
 
+.accordion-header:active {
+    color: #00aa44;
+}
+
 .accordion-content {
     padding: 0.1rem 0;
     display: none;
@@ -141,11 +145,17 @@ main .main-banner {
     color: #00aa44
 }
 
-.gallery-pic {
+
+.gallery-pic, .embed-video {
     width: 90%;
     height: auto;
     padding: 1rem 0;
     border-radius: 25px;
+}
+.embed-video {
+    margin: 2rem 0;
+    border: none;
+    min-height: 35rem;
 }
 
 @media only screen and (max-width: 700px) {
@@ -154,6 +164,11 @@ main .main-banner {
         letter-spacing: 1px;
         text-align: justify-all;
     }
+
+    .embed-video {
+        min-height: 20rem;
+    }
 }
+
 
 
