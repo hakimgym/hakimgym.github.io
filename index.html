@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- by MATOUŠ ZÁTKA -->
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -16,6 +17,8 @@
 <body>
 <div class="header">
     <img alt="runy" class="header-logo" src="/assets/runy.png"/>
+    <p>☎️ +420 774 153 944</p>
+    <p>✉️ info@hakimfitness.cz</p>
     <button class="dropdown-btn" id="dropdownButton"><img alt="dropdown button" src="/assets/dropdown.png"
                                                           title="Rozbalit nabídku"/></button>
 </div>
@@ -97,8 +100,8 @@
                             </p>
                             <h3 class="sub-title">Soukromé/Individuální lekce</h3>
                             <p class="content-description">
-                                1 až 2 zájemci ................ 700 Kč / 1 hodina<br>
-                                3 až 4 zájemci ............ 1000 Kč / 1 hodina<br>
+                                1 až 2 zájemci ........... 700 Kč / 1 hodina<br>
+                                3 až 4 zájemci ....... 1000 Kč / 1 hodina<br>
                             </p>
                         </div>
                     </div>
@@ -137,8 +140,9 @@
                         <div class="accordion-content-wrapper">
                             <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                     allowfullscreen
-                                    class="embed-video" src="https://www.youtube.com/embed/9CKk2PvkHlk"
-                                    title="YouTube video player" height="auto"></iframe>
+                                    class="embed-video" height="auto"
+                                    src="https://www.youtube.com/embed/9CKk2PvkHlk"
+                                    title="YouTube video player"></iframe>
                             <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                     allowfullscreen class="embed-video"
                                     src="https://www.youtube.com/embed/peI79ulZWi8"
@@ -286,6 +290,57 @@
     </div>
 
 </main>
+<footer>
+    <div class="footer-content">
+        <div class="otevreno">
+            <h3 class="footer-heading">
+                Otevírací doba
+            </h3>
+            <p> Pondělí: &nbsp;&nbsp;06:00-22:00 </p>
+            <p> Úterý: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;06:00-22:00 </p>
+            <p> Středa: &nbsp;&nbsp;&nbsp;06:00-22:00 </p>
+            <p> Čtvrtek: &nbsp;&nbsp;06:00-22:00 </p>
+            <p> Pátek: &nbsp;&nbsp;&nbsp;&nbsp;06:00-22:00 </p>
+            <p> Sobota: &nbsp;&nbsp;06:00-22:00 </p>
+            <p> Neděle: &nbsp;&nbsp;06:00-22:00 </p>
+        </div>
+        <div class="adresa">
+            <h3 class="footer-heading">
+                HAKIM GYM
+            </h3>
+            <p>Nově otevřeno!</p>
+            <p><b>NC OAZA</b></p>
+            <p>Arménská, 3277 Kladno</p>
+            <br>
+            <p><u style="font-size: larger">Prozatím přijímáme platby pouze v hotovosti!</u></p>
+        </div>
+        <div class="map-media">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed/v1/place?q=Arm%C3%A9nsk%C3%A1%203277%2C%20272%2001%2C%20Kladno&key=AIzaSyA-A0_8ow-U-pgEl_1WcWeNSJyWRoIzy40"></iframe>
+            </div>
+            <div class="footer-contact">
+                <p>☎️ +420 774 153 944</p>
+                <p>✉️ info@hakimfitness.cz</p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/profile.php?id=100091399460132" target="_blank"><img alt="Facebook"
+                                                                                                       src="/assets/fb.png"
+                                                                                                       style="margin-left: -0.7rem"
+                                                                                                       title="Facebook: Hakim Gym"/></a>
+                <a href="https://www.instagram.com/hakim.fitness/" target="_blank"><img alt="Instagram"
+                                                                                        src="/assets/ig.png"
+                                                                                        style="transform: scale(1.18)"
+                                                                                        title="Instagram: Hakim Gym"/></a>
+                <a href="https://www.youtube.com/@HakimGym" target="_blank"><img alt="YouTube" src="/assets/yt.png"
+                                                                                 style="transform: scale(1.48)"
+                                                                                 title="YouTube: Hakim Gym"/></a>
+                <a href="https://www.tiktok.com/discover/pavelhakimmajer" target="_blank"><img alt="Tiktok"
+                                                                                               src="/assets/tiktok.png"
+                                                                                               title="TikTok: Hakim Gym"/></a>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 <script>
     function hideAccordions(accordion) {
@@ -306,6 +361,7 @@
         let dropdownMenu = document.getElementById('dropdownMenu');
         let accordion = document.getElementsByClassName('accordion');
         let mainLogo = document.getElementById('main-logo');
+        let mainBanner = document.getElementsByClassName('main-banner').item(0);
         dropdownMenu.classList.toggle('visible');
         dropdownMenu.style.visibility = 'visible';
         dropdownMenu.style.opacity = '1';
@@ -316,6 +372,7 @@
             hakimLogo.src = '/assets/logo.png';
             hakimLogo.style.height = '100%';
             hakimLogo.style.opacity = '1';
+            mainBanner.style.maxHeight = '0';
             showAccordions(accordion);
         } else {
             hakimLogo.style.opacity = '0';
@@ -323,6 +380,7 @@
             hakimLogo.src = '/assets/runy.png';
             hakimLogo.style.height = '40%';
             hakimLogo.style.opacity = '1';
+            mainBanner.style.maxHeight = 'unset';
             hideAccordions(accordion);
         }
     });
