@@ -286,8 +286,20 @@ footer {
         display: block;
     }
 
+    .footer-content {
+        padding: 0;
+    }
+
+    .otevreno {
+        padding: 1rem
+    }
+
     .gallery-pic, .embed-video {
         width: 90%;
+    }
+
+    .map-media {
+        padding-bottom: 2.5rem;
     }
 }
 
