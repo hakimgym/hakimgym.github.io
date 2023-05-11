@@ -288,8 +288,23 @@
 </main>
 </body>
 <script>
+    function hideAccordions(accordion) {
+        Array.from(accordion).forEach(function (child) {
+            child.style.maxHeight = '0';
+            child.style.overflow = 'hidden';
+        })
+    }
+
+    function showAccordions(accordion) {
+        Array.from(accordion).forEach(function (child) {
+            child.style.maxHeight = 'unset';
+            child.style.overflow = 'visible';
+        })
+    }
+
     document.getElementById('dropdownButton').addEventListener('click', function () {
         let dropdownMenu = document.getElementById('dropdownMenu');
+        let accordion = document.getElementsByClassName('accordion');
         let mainLogo = document.getElementById('main-logo');
         dropdownMenu.classList.toggle('visible');
         dropdownMenu.style.visibility = 'visible';
@@ -301,13 +316,14 @@
             hakimLogo.src = '/assets/logo.png';
             hakimLogo.style.height = '100%';
             hakimLogo.style.opacity = '1';
+            showAccordions(accordion);
         } else {
             hakimLogo.style.opacity = '0';
             mainLogo.style.maxHeight = 'max-content';
             hakimLogo.src = '/assets/runy.png';
             hakimLogo.style.height = '40%';
             hakimLogo.style.opacity = '1';
-            dropdownMenu.style.opacity = '0';
+            hideAccordions(accordion);
         }
     });
 
