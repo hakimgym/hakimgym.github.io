@@ -424,6 +424,7 @@ textarea {
 
     .contact-form label {
         width: 90%;
+        min-width: 90vw;
     }
 
     .contact-form button {
