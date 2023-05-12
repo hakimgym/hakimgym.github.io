@@ -11,7 +11,7 @@
     <link href="/assets/logo.png" rel="shortcut icon">
     <link href="styles.css" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
     </style>
 </head>
 <body>
@@ -308,15 +308,43 @@
             <div class="accordion-content">
                 <div class="accordion-content-wrapper">
                     <h3 class="sub-title">NC OAZA Kladno</h3>
-                    <p class="content-description">Naše fitness & fighting centrum se nachází v nákupním centru Oaza v Kladenských Kročehlavech. Vchod u Billy je k nám nejblíže a zároveň se tam nachází výstupní stanice několika městských autobusových linek. Vstup leží přímo mezi obchody NKD a Action. </p>
+                    <p class="content-description">Naše fitness & fighting centrum se nachází v nákupním centru OAZA v
+                        Kladenských Kročehlavech. <br><br>Vchod u Billy je k nám nejblíže a zároveň se tam nachází
+                        výstupní
+                        stanice městské autobusové linky 601. <br><br>Linky 603 a 606 Vás dovezou na Okrsek 4, který je
+                        vzdálen cca 300m. Linky PID (324, 330, 399) zastavují na stanici Kladno - Meta, která je
+                        vzdálena cca 150m.<br> <br> <b>Vstup do HAKIM GYM najdete přímo mezi obchody NKD a Action.</b>
+                    </p>
+                    <img alt="vstup" class="gallery-pic" id="entry-pic" src="assets/entry.jpg"/>
                 </div>
             </div>
         </div>
 
-        <!-- Kontakt section -->
+        <!-- Napište nám section -->
         <div class="accordion">
-            <div class="accordion-header">Kontakt</div>
-            <div class="accordion-content">TEST</div>
+            <div class="accordion-header">Napište nám</div>
+            <div class="accordion-content">
+                <div class="accordion-content-wrapper">
+                    <form class="contact-form"
+                            action="https://formspree.io/f/xknayglp"
+                            method="POST"
+                    >
+                        <label>
+                            Jméno a příjmení:
+                            <input name="name" type="text" required>
+                        </label>
+                        <label>
+                            Váš email:
+                            <input name="email" type="email" required>
+                        </label>
+                        <label>
+                            Vaše zpráva:
+                            <textarea name="message" required></textarea>
+                        </label>
+                        <button type="submit">Odeslat</button>
+                    </form>
+                </div>
+            </div>
         </div>
 
         <!-- O nás section -->
@@ -337,7 +365,7 @@
                 Otevírací doba
             </h3>
             <p> Pondělí: &nbsp;&nbsp;06:00-22:00 </p>
-            <p> Úterý: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;06:00-22:00 </p>
+            <p> Úterý: &nbsp;&nbsp;&nbsp;&nbsp;06:00-22:00 </p>
             <p> Středa: &nbsp;&nbsp;&nbsp;06:00-22:00 </p>
             <p> Čtvrtek: &nbsp;&nbsp;06:00-22:00 </p>
             <p> Pátek: &nbsp;&nbsp;&nbsp;&nbsp;06:00-22:00 </p>
@@ -348,15 +376,20 @@
             <h3 class="footer-heading">
                 HAKIM GYM
             </h3>
-            <p>Nově otevřeno!</p>
-            <p><b>NC OAZA</b></p>
+            <p><b style="font-size: large">NC OAZA</b></p>
             <p>Arménská, 3277 Kladno</p>
+            <p><b>Nově otevřeno!</b></p>
             <br>
-            <p><b style="font-size: larger">Prozatím přijímáme platby pouze v hotovosti!</b></p>
+            <p><b style="font-size: large">Prozatím přijímáme platby pouze v hotovosti!</b></p>
         </div>
         <div class="map-media">
             <div class="map">
-                <iframe src="https://www.google.com/maps/embed/v1/place?q=Arm%C3%A9nsk%C3%A1%203277%2C%20272%2001%2C%20Kladno&key=AIzaSyA-A0_8ow-U-pgEl_1WcWeNSJyWRoIzy40"></iframe>
+                <h3 class="footer-heading">
+                    Kde nás najdete?
+                </h3>
+                <iframe allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d10229.757204766083!2d14.1389886!3d50.1342132!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTDCsDA3JzU3LjciTiAxNMKwMDgnMjYuNCJF!5e0!3m2!1scs!2scz!4v1683913378401!5m2!1scs!2scz"></iframe>
             </div>
             <div class="footer-contact">
                 <p>☎️ +420 774 153 944</p>
@@ -379,6 +412,9 @@
                                                                                                title="TikTok: Hakim Gym"/></a>
             </div>
         </div>
+    </div>
+    <div id="mma-masters-logo-wrapper">
+        <img alt="logo" id="mma-masters-logo" src="/assets/mmasters.png"/>
     </div>
 </footer>
 </body>

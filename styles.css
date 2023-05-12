@@ -11,7 +11,7 @@ html, body {
 
 
 body {
-    font-family: 'Saira Semi Condensed', cursive;
+    font-family: 'Prompt', serif;
     letter-spacing: 1px;
     position: relative;
 }
@@ -65,6 +65,7 @@ main {
     min-height: 50vh;
     height: max-content;
     background-color: black;
+    position: relative;
 }
 
 #main-logo-wrapper {
@@ -76,15 +77,31 @@ main {
     background: none;
 }
 
+#mma-masters-logo-wrapper {
+    width: 25%;
+    margin: -4rem auto 0;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #main-logo {
     background: none;
     width: 80%;
-    max-width: 800px;
+    max-width: 600px;
+    height: auto;
+}
+
+#mma-masters-logo {
+    background: none;
+    width: 80%;
+    max-width: 600px;
     height: auto;
 }
 
 main .main-banner {
-    background-image: linear-gradient(to bottom, black, black, black, darkgreen, forestgreen);
+    background-image: linear-gradient(to bottom, black, black, #222);
     height: 80vh;
     width: 100%;
 }
@@ -109,22 +126,22 @@ main .main-banner {
 }
 
 .accordion-header:hover {
-    color: #00aa44;
+    color: #7bcb00;
 }
 
 .accordion-header:active {
-    color: #00aa44;
+    color: #7bcb00;
 }
 
 .accordion-content {
     padding: 0.1rem 0;
     display: none;
-    background-image: linear-gradient(to right, #000, #3d9300, #000);
+    background-image: linear-gradient(to right, #000, #7bcb00, #000);
     color: white;
 }
 
 .accordion-content-wrapper {
-    padding: 2rem 5rem;
+    padding: 2rem 15rem;
     background-color: black;
     text-align: center;
     letter-spacing: 2px;
@@ -135,7 +152,7 @@ main .main-banner {
 }
 
 .accordion-content-wrapper h3 {
-    color: #63c917;
+    color: #7bcb00;
     margin: 2rem auto;
 }
 
@@ -155,7 +172,7 @@ main .main-banner {
 }
 
 .accordion {
-    color: #00aa44
+    color: #7bcb00;
 }
 
 .gallery-pic, .embed-video {
@@ -163,6 +180,10 @@ main .main-banner {
     height: auto;
     margin: 4rem 0;
     border-radius: 15px;
+}
+
+#entry-pic {
+    width: 30%;
 }
 
 .embed-video {
@@ -176,6 +197,7 @@ footer {
     width: 100%;
     min-height: 30vh;
     height: max-content;
+    border-top: 2px solid #7bcb00;
 }
 
 .footer-content {
@@ -198,7 +220,7 @@ footer {
 }
 
 .footer-content h3 {
-    color: #63c917;
+    color: #7bcb00;
     font-size: x-large;
 }
 
@@ -240,11 +262,7 @@ footer {
 }
 
 .social-media a img:hover {
-    box-shadow: 0 0 10px #2ab62a;
-    background-color: mediumseagreen;
-    border-radius: 10px;
     cursor: pointer;
-    opacity: 0.6;
 }
 
 .map iframe {
@@ -283,9 +301,71 @@ footer {
     box-shadow: 0 0 5px 1px white;
 }
 
+.contact-form * {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    min-height: 40rem !important;
+}
+
+.contact-form button {
+    padding: 2rem 5rem;
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    border: 1px solid lawngreen;
+    font-size: large;
+    text-decoration: none;
+    transition: 0.1s;
+    text-align: center !important;
+}
+
+.contact-form button:hover {
+    border: 1px solid white;
+    color: lawngreen;
+    box-shadow: 0 0 5px 2px white;
+}
+
+.contact-form input, textarea {
+    width: 100%;
+    height: 3rem;
+    padding-left: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+    font-family: inherit;
+    font-size: large;
+}
+
+textarea {
+    min-height: 15rem;
+    padding: 1rem 0;
+}
+
+.contact-form input:focus, textarea:focus {
+    border: none;
+    outline: none;
+}
+
+.contact-form label {
+    flex-grow: 1;
+    align-items: center;
+    width: 40%;
+}
+
+.contact-form {
+    min-height: 30rem;
+}
+
 @media only screen and (max-width: 700px) {
     .accordion-content-wrapper {
-        padding: 5% 3%;
+        padding: 5% 7%;
         letter-spacing: 1px;
         text-align: justify-all;
         font-size: medium;
@@ -322,7 +402,33 @@ footer {
     }
 
     .map-media {
+        margin-top: 3rem;
         padding-bottom: 2.5rem;
+    }
+
+    #mma-masters-logo-wrapper {
+        width: 80%;
+        padding-top: 6rem;
+    }
+
+    .map-media iframe {
+        margin-bottom: 2rem;
+    }
+
+    #entry-pic {
+        width: 90%;
+        height: auto;
+    }
+
+    .contact-form label {
+        width: 90%;
+    }
+
+    .contact-form button {
+        width: 50%;
+        text-align: center;
+        padding: 1rem 3rem;
+        border: 3px solid lawngreen;
     }
 }
 
