@@ -321,9 +321,10 @@ footer {
     border-radius: 1rem;
     border: 1px solid lawngreen;
     font-size: large;
+    font-family: inherit;
     text-decoration: none;
     transition: 0.1s;
-    text-align: center !important;
+    align-items: center;
 }
 
 .contact-form button:hover {
@@ -357,6 +358,7 @@ textarea {
     flex-grow: 1;
     align-items: center;
     width: 40%;
+    min-width: 400px;
 }
 
 .contact-form {
@@ -402,7 +404,7 @@ textarea {
     }
 
     .map-media {
-        margin-top: 3rem;
+        margin-top: 1rem;
         padding-bottom: 2.5rem;
     }
 
@@ -427,8 +429,12 @@ textarea {
     .contact-form button {
         width: 50%;
         text-align: center;
-        padding: 1rem 3rem;
+        padding: 1rem 3.5rem;
         border: 3px solid lawngreen;
+    }
+
+    .reservations-link {
+        font-size: x-small;
     }
 }
 
