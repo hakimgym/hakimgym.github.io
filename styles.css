@@ -161,8 +161,8 @@ main .main-banner {
 .gallery-pic, .embed-video {
     width: 60%;
     height: auto;
-    padding: 4rem 0;
-    border-radius: 25px;
+    margin: 4rem 0;
+    border-radius: 15px;
 }
 
 .embed-video {
@@ -317,7 +317,8 @@ footer {
 
     .gallery-pic, .embed-video {
         width: 90%;
-        padding: 2rem 0;
+        margin: 2rem 0;
+        border-radius: 5px;
     }
 
     .map-media {
