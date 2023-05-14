@@ -373,6 +373,10 @@ textarea {
         font-size: medium;
     }
 
+    #main-logo-wrapper {
+        max-height: 60%;
+    }
+
     .embed-video {
         min-height: 20rem;
     }
@@ -431,7 +435,7 @@ textarea {
         width: 50%;
         text-align: center;
         padding: 1rem 3.5rem;
-        border: 3px solid lawngreen;
+        border: 3px solid #7bcb00;
     }
 
     .reservations-link {
