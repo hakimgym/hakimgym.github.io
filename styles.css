@@ -75,6 +75,7 @@ main {
     align-items: center;
     justify-content: center;
     background: none;
+    max-height: 100%;
 }
 
 #mma-masters-logo-wrapper {
@@ -141,7 +142,7 @@ main .main-banner {
 }
 
 .accordion-content-wrapper {
-    padding: 2rem 15rem;
+    padding: 2rem 5%;
     background-color: black;
     text-align: center;
     letter-spacing: 2px;
@@ -363,6 +364,30 @@ textarea {
 
 .contact-form {
     min-height: 30rem;
+}
+
+.pdf_btn {
+    width: 20%;
+    min-width: min-content;
+    padding: 2rem 5rem;
+    margin: 1rem auto;
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    border: 1px solid lawngreen;
+    font-size: large;
+    font-family: inherit;
+    text-decoration: none;
+    transition: 0.1s;
+    align-items: center;
+    text-align: center;
+}
+
+.pdf_btn:hover {
+    border: 1px solid white;
+    color: lawngreen;
+    box-shadow: 0 0 5px 2px white;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 700px) {
