@@ -421,16 +421,16 @@ textarea {
         font-size: medium;
     }
 
-    #main-logo-wrapper {
-        max-height: 40%;
-    }
-
     .embed-video {
         min-height: 20rem;
     }
 
-    .main-banner, main {
+    .main {
         height: max-content;
+    }
+
+    .main-banner {
+        max-height: 50vh !important;
     }
 
     .footer-content {
