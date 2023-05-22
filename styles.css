@@ -99,7 +99,7 @@ main {
 }
 
 main .main-banner {
-    background-image: radial-gradient(ellipse closest-side at center, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.1) 70%, rgba(0,0,0,0.8) 100%), url("assets/bg_s.jpg");
+    background-image: radial-gradient(ellipse closest-side at center, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0.1) 70%, rgba(0, 0, 0, 0.8) 100%), url("assets/bg_s.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -146,6 +146,9 @@ main .main-banner {
     background-color: black;
     text-align: center;
     letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .content-description {
@@ -177,7 +180,7 @@ main .main-banner {
 }
 
 .gallery-pic, .embed-video {
-    width: 60%;
+    width: min(60rem);
     height: auto;
     margin: 4rem 0;
     border-radius: 15px;
@@ -390,6 +393,26 @@ textarea {
     cursor: pointer;
 }
 
+@media only screen and (max-width: 1000px) {
+
+    .header p {
+        display: none;
+    }
+
+    .footer-contact {
+        display: block;
+    }
+
+    #mma-masters-logo-wrapper {
+        width: 60%;
+        padding-top: 6rem;
+    }
+
+    .gallery-pic, .embed-video {
+        width: 60%;
+    }
+}
+
 @media only screen and (max-width: 700px) {
     .accordion-content-wrapper {
         padding: 5% 7%;
@@ -399,7 +422,7 @@ textarea {
     }
 
     #main-logo-wrapper {
-        max-height: 60%;
+        max-height: 40%;
     }
 
     .embed-video {
@@ -408,14 +431,6 @@ textarea {
 
     .main-banner, main {
         height: max-content;
-    }
-
-    .header p {
-        display: none;
-    }
-
-    .footer-contact {
-        display: block;
     }
 
     .footer-content {
