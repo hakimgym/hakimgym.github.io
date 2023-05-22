@@ -17,14 +17,13 @@
 <body>
 <div class="header">
     <img alt="runy" class="header-logo" src="/assets/runy.png"/>
-    <p>☎️ +420 704 153 944</p>
+    <p>📱 +420 704 153 944</p>
     <p>✉️ info@hakimfitness.cz</p>
     <button class="dropdown-btn" id="dropdownButton"><img alt="dropdown button" src="/assets/dropdown.png"
                                                           title="Rozbalit nabídku"/></button>
 </div>
 <main>
-    <div id="main-logo-wrapper">
-        <img alt="logo" id="main-logo" src="/assets/logo.png"/>
+    <div id="main-logo">
     </div>
     <div class="dropdown-menu" id="dropdownMenu">
         <!-- Fighting section -->
@@ -307,9 +306,12 @@
             <div class="accordion-header">Pravidla a podmínky</div>
             <div class="accordion-content">
                 <div class="accordion-content-wrapper" style="display: flex; flex-direction: column">
-                    <button class="pdf_btn" onclick="window.open('/assets/provozni_rad.pdf', '_blank')">Provozní řád</button>
+                    <button class="pdf_btn" onclick="window.open('/assets/provozni_rad.pdf', '_blank')">Provozní řád
+                    </button>
                     <button class="pdf_btn" onclick="window.open('/assets/gdpr.pdf', '_blank')">GDPR</button>
-                    <button class="pdf_btn" onclick="window.open('/assets/smluvni_podminky.pdf', '_blank')">Smluvní podmínky</button>
+                    <button class="pdf_btn" onclick="window.open('/assets/smluvni_podminky.pdf', '_blank')">Smluvní
+                        podmínky
+                    </button>
                 </div>
             </div>
         </div>
@@ -406,7 +408,7 @@
             <p><b>Nově otevřeno!</b></p>
             <br>
             <p><b style="font-size: large">Platby hotově i kartou!</b></p>
-            <p><b style="font-size: large">Přijímáme Multisportky i zaměstnanecké karty Benefit Plus!</b></p>
+            <p><b style="font-size: large">Přijímáme Multisport karty</b></p>
         </div>
         <div class="map-media">
             <div class="map">
@@ -418,7 +420,7 @@
                         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10230.039495995972!2d14.1404692!3d50.1328928!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470bb793993d0a55%3A0xb0fb3dbbd102e7e8!2sHakim%20gym!5e0!3m2!1scs!2scz!4v1684522584221!5m2!1scs!2scz"></iframe>
             </div>
             <div class="footer-contact">
-                <p>☎️ +420 704 153 944</p>
+                <p>📱 +420 704 153 944</p>
                 <p>✉️ info@hakimfitness.cz</p>
             </div>
             <div class="social-media">
@@ -462,7 +464,6 @@
     document.getElementById('dropdownButton').addEventListener('click', function () {
         let dropdownMenu = document.getElementById('dropdownMenu');
         let accordion = document.getElementsByClassName('accordion');
-        let mainLogo = document.getElementById('main-logo');
         let mainBanner = document.getElementsByClassName('main-banner').item(0);
         dropdownMenu.classList.toggle('visible');
         dropdownMenu.style.visibility = 'visible';
@@ -470,7 +471,6 @@
         let hakimLogo = document.getElementsByClassName('header-logo').item(0);
         if (dropdownMenu.classList.contains('visible')) {
             hakimLogo.style.opacity = '0';
-            mainLogo.style.maxHeight = '0';
             hakimLogo.src = '/assets/logo.png';
             hakimLogo.style.height = '100%';
             hakimLogo.style.opacity = '1';
@@ -478,7 +478,6 @@
             showAccordions(accordion);
         } else {
             hakimLogo.style.opacity = '0';
-            mainLogo.style.maxHeight = 'max-content';
             hakimLogo.src = '/assets/runy.png';
             hakimLogo.style.height = '40%';
             hakimLogo.style.opacity = '1';
