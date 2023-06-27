@@ -175,7 +175,7 @@ main .main-banner {
 }
 
 .gallery-pic, .embed-video {
-    width: min(60rem);
+    width: min(40rem);
     height: auto;
     margin: 4rem 0;
     border-radius: 15px;
